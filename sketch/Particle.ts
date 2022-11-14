@@ -99,7 +99,7 @@ export class Particle extends Thing {
     const d = this.mass * 10
 
     strokeWeight(0) // stroke weight
-    fill("yellow") // stroke color
+    fill(this.name === "p1" ? "red" : "blue") // stroke color
     circle(x0, y0, d)
 
     this.prevPosition = this.position.copy()

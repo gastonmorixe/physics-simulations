@@ -246,8 +246,6 @@ export class System {
     const s1 = new Spring({
       name: "s1",
       length: 100,
-      stiffness: 1 / 100000,
-      damping: 0.7,
     })
     this.addThing(s1)
 
@@ -287,9 +285,9 @@ export class System {
     // Spring 3
     const s3 = new Spring({
       name: "s3",
-      length: 150,
+      length: 100,
       // damping: 1.1,
-      displacement: createVector(0, 50),
+      displacement: createVector(0, -25),
       // stiffness: 1.1,
     })
     this.addThing(s3)
@@ -367,7 +365,7 @@ export class System {
     // Set the plot title and the axis labels
     plot.setTitleText("Damped mass-spring system")
     plot.getXAxis().setAxisLabelText("x axis")
-    plot.getYAxis().setAxisLabelText("y axis")
+    plot.getYAxis().setAxisLabelText("p1 y-pos")
 
     // Draw it!
     plot.defaultDraw()

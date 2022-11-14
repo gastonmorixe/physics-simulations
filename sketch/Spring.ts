@@ -22,8 +22,8 @@ export class Spring extends Thing {
   }) {
     super(config)
 
-    this.stiffness = config.stiffness || 1 / 20
-    this.damping = config.damping || 1 / 10 // default: undamped
+    this.stiffness = config.stiffness || 1 / 10
+    this.damping = config.damping || 1 / 4 // default: undamped
     this.length = createVector(0, config.length || 20)
 
     this.velocity = config.velocity || createVector(0, 0)

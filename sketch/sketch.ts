@@ -17,6 +17,6 @@ function setup() {
 }
 
 function draw() {
-  background(180)
+  background(255)
   sys.draw()
 }
