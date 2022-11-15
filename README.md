@@ -11,5 +11,5 @@ D001 - N-Body dumped mass-spring system
 
 ## Copyright and License
 
-Gaston Morixe 2022
+Gaston Morixe 2022\
 MIT License
